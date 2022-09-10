@@ -1,0 +1,1001 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+
+}
+
+/* body{
+    width: 1920px;
+} */
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero-section {
+
+    height: 700px;
+    background-image: url(/images/destination_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
+
+.header_nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    font-size: 16px;
+}
+
+
+
+.phone {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.phone i {
+    padding-right: 20px;
+}
+
+
+
+/* .navigation{
+max-width: 524px;
+} */
+
+.menu {
+    display: inline-flex;
+    list-style: none;
+    justify-content: space;
+}
+
+.menu_item a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu_item a:hover {
+    transition: all 0.4s ease 0s;
+    color: #fbad27;
+}
+
+.menu_item a:active {
+    color: #fbad27;
+}
+
+
+.menu li {
+    padding-right: 30px;
+}
+
+
+
+.toggle-button {
+    position: absolute;
+    top: .90rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#click {
+    display: none;
+}
+
+.menu_btn {
+    display: none;
+}
+
+
+.hero {
+    text-align: center;
+    margin-top: 150px;
+    color: #ffff;
+
+
+}
+
+.hero_title {
+    font-size: 72px;
+    padding: 8px 0;
+}
+
+.hero_phrase {
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+.hero_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_button a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 16px;
+    padding: 20px 63px;
+    background-color: #fbad27;
+    border-radius: 30px;
+    line-height: 0;
+}
+
+.hero_button a:hover {
+    transition: all 0.5s ease 0s;
+    background-color: #ffffff;
+    color: #fbad27;
+    font-weight: bold;
+    transform: scale(1.08);
+
+}
+
+.welcome_section {
+    padding-top: 60px;
+}
+
+.welcome_text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.welcome_title {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.welcome_description {
+    font-size: 16px;
+    padding: 0px 150px;
+}
+
+.services {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.welcome_card {
+    width: 33.3%;
+    padding: 47px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+
+.welcome_card:hover {
+    transition: all 0.5s ease 0s;
+    --webkit-box-shadow: 0px 12px 27px 4px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 12px 27px 4px rgba(0, 0, 0, 0.55);
+}
+
+.welcome_card i {
+    color: #fbad27;
+    font-size: 45px;
+    margin: 20px 10px;
+}
+
+.welcome_card_title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.welcome_card_description {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+.line {
+    display: inline-block;
+    width: 100%;
+    background: #000;
+    height: 1px;
+    opacity: 30%;
+}
+
+
+.destination_section {
+    margin: 30px auto 0;
+    padding-top: 60px;
+    max-width: 980px;
+}
+
+
+.destination_top_part {
+    text-align: center;
+}
+
+
+.destination_title {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.destination_phrase {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.search_icon {
+    font-size: 25px;
+    margin: 5px;
+}
+
+
+.destination_grid {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.destination_top_countries {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.country {
+    position: relative;
+}
+
+.country p {
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 3px 4px 4px #000000;
+}
+
+.country img {
+    padding: 20px;
+    /* margin: 10px; */
+    height: 400px;
+    max-width: 396px;
+    object-fit: cover;
+}
+
+
+.destination_bottom_countries {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uae p {
+    right: 45%;
+}
+
+.country:hover {
+    transition: all 0.5s ease 0s;
+
+    box-shadow: 0px 12px 27px 4px rgba(0, 0, 0, 0.55);
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.blog_section {
+    margin: 30px auto 0;
+    padding-top: 60px;
+    max-width: 980px;
+
+}
+
+
+.blog_title {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.blog_phrase {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.blog_text {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.blog_content {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.blog_section img {
+    max-width: 100%;
+}
+
+.istanbul_section {
+    display: flex;
+}
+
+.istanbul_text {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.istanbul_image {
+    width: 50%;
+}
+
+.blog_para_title {
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.blog_para {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.blog_left {
+    /* margin-right: 20px; */
+    padding-right: 50px;
+
+}
+
+.people_love {
+    margin-bottom: 40px;
+}
+
+.blog_right {
+    display: flex;
+    /* margin-left: 20px; */
+
+}
+
+.blog_right_2 {
+    padding-left: 50px;
+}
+
+.liberty_description {
+    margin-bottom: 33px;
+}
+
+.china {
+    margin-bottom: 40px;
+}
+
+.shimla {
+    margin-bottom: 30px;
+}
+
+
+.btn_reading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+
+}
+
+.btn_reading a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 16px;
+    padding: 20px 55px;
+    background-color: #fbad27;
+    border-radius: 30px;
+    line-height: 0;
+}
+
+.btn_reading a:hover {
+    transition: all 0.5s ease 0s;
+    background-color: #ffffff;
+    color: #fbad27;
+    font-weight: bold;
+    transform: scale(1.08);
+    border: 3px solid #fbad27;
+}
+
+
+
+.client_section {
+    margin: 30px auto 0;
+    padding-top: 60px;
+    max-width: 980px;
+}
+
+
+.client_title {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.client_phrase {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.client_text {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.client_content {
+    display: flex;
+    position: relative;
+    margin-bottom: 250px;
+}
+
+.comma {
+    font-size: 300px;
+    opacity: 20%;
+}
+
+.lower_comma {
+    transform: rotate(180deg);
+    margin-left: 130px;
+    position: absolute;
+    right: -95px;
+    bottom: -75px;
+}
+
+.upper_comma {
+    position: absolute;
+    left: -100px;
+    top: -90px;
+}
+
+.client_review {
+    display: flex;
+    padding: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+    --webkit-box-shadow: 0px 12px 27px 4px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 12px 27px 4px rgba(0, 0, 0, 0.55);
+    border-radius: 5px;
+}
+
+.client_review:hover {
+    transition: all 0.8s ease 0s;
+    transform: scale(1.08);
+}
+
+.client_image {
+    width: 90%;
+    border-radius: 7px;
+}
+
+
+.client_review_text {
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 18px;
+}
+
+.client_info {
+    margin-top: 30px;
+}
+
+.client_info .client_name {
+    font-weight: bold;
+    color: #fbad27;
+}
+
+
+
+.discount_section {
+    background: #fbad27;
+    padding: 80px;
+    margin-bottom: 100px;
+}
+
+.discount {
+    display: flex;
+    justify-items: center;
+    margin-left: 135px;
+}
+
+.discount_text {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    width: 60%
+}
+
+.btn_book_now {
+    width: 40%;
+    margin-left: 90px;
+}
+
+
+
+.btn_book_now a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 16px;
+    padding: 15px 80px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    line-height: 0;
+}
+
+.btn_book_now a:hover {
+    transition: all 0.8s ease 0s;
+    background-color: #ffffff;
+    color: #fbad27;
+    font-weight: bold;
+    transform: scale(1.1);
+    /* border:3px solid #fff; */
+
+}
+
+
+.footer_area {
+    margin: 30px auto 0;
+    padding-top: 60px;
+    max-width: 980px;
+    margin-top: 150px;
+}
+
+.footer_top {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.footer_about_us {
+    width: 25%;
+}
+
+.footer_address {
+    width: 25%;
+}
+
+.footer_contact_us {
+    width: 25%;
+}
+
+.follow_us {
+    width: 25%;
+}
+
+
+.footer_titles {
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.footer_titles a,
+.footer_list a,
+.follow_us_icons a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.footer_list {
+    list-style: none;
+}
+
+
+.menu_item_1 {
+    line-height: 26px;
+}
+
+.follow_us_icons i {
+    font-size: 26px;
+    color: #616161;
+    padding: 5px;
+}
+
+.follow_us_icons .instagram .fa-instagram-square {
+    color: #fbad27;
+}
+
+.footer_bottom {
+    text-align: center;
+    padding: 45px;
+    margin: 20px;
+}
+
+@media (max-width:767px) {
+
+    .menu_btn {
+        display: block;
+    }
+
+
+    h2 {
+        font-size: 40px !important;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    .top {
+        height: 600px;
+        background-repeat: no-repeat;
+
+        background-position: center;
+    }
+
+    .hero_title {
+        font-size: 55px !important;
+        padding: 8px 0;
+    }
+
+    .navigation {
+        position: relative;
+    }
+
+    .navigation .menu_btn i {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        /* height: 100vh; */
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        background-color: #fbad27;
+    }
+
+
+
+    #click:checked~.menu {
+        left: 0%;
+    }
+
+    #click:checked~.menu_btn i:before {
+        content: "\f00d";
+    }
+
+
+    label {
+        position: absolute;
+        top: -65px;
+        left: -30px;
+    }
+
+    .header_nav {
+        position: relative;
+    }
+
+    .phone {
+        position: absolute;
+        right: 15px;
+        top: 20px;
+    }
+
+    .menu li {
+        margin: 40px;
+    }
+
+    .menu li a {
+        font-size: 20px;
+        display: block;
+    }
+
+    .menu_item a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu_item a:hover {
+        color: #fbad27;
+        background-color: #ffffff;
+        width: 100%;
+    }
+
+    .menu_item a:active {
+        color: #fbad27;
+    }
+
+    label i {
+        margin-left: 20px;
+    }
+
+    .navigation .menu_btn {
+        font-size: 22px;
+        cursor: pointer;
+        margin: 40px;
+    }
+
+
+    .welcome_description {
+        line-height: 30px;
+        margin: 40px;
+        padding: 0;
+    }
+
+
+    .services {
+        flex-direction: column;
+
+    }
+
+    .welcome_card {
+        width: 100% !important;
+        text-align: center;
+        margin: 0 auto !important;
+        line-height: 30px;
+    }
+
+    .destination_phrase {
+        font-size: 18px;
+        padding: 30px;
+    }
+
+    .country img {
+        width: 100%;
+    }
+
+    .destination_top_countries {
+        flex-wrap: wrap;
+    }
+
+    .destination_bottom_countries {
+        flex-wrap: wrap;
+    }
+
+    .line {
+        display: none !important;
+    }
+
+    .blog_phrase {
+        font-size: 18px;
+        padding: 30px;
+    }
+
+    .blog_content {
+        flex-wrap: wrap;
+    }
+
+    .blog_left {
+        padding-right: 0 !important;
+    }
+
+    .blog_left .istanbul_section {
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+
+    .blog_right {
+        flex-wrap: wrap;
+    }
+
+    .liberty_text {
+        text-align: center;
+        line-height: 30px;
+        padding: 30px;
+    }
+
+    .blog_right_2 {
+        padding-left: 0 !important;
+        margin-top: 35px;
+    }
+
+    .shimla_text {
+        text-align: center;
+        line-height: 30px;
+        padding: 30px;
+    }
+
+    .client_review {
+        max-width: 90% !important;
+        flex-wrap: wrap;
+        padding: 25px !important;
+        text-align: center;
+        padding-bottom: 45px !important;
+    }
+
+    .client_image {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    .review {
+        line-height: 30px;
+    }
+
+    .comma {
+        display: none;
+    }
+
+    .discount {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        margin-left: 0px !important;
+        text-align: center;
+    }
+
+    .discount_text {
+        width: 100% !important;
+        padding-bottom: 55px;
+    }
+
+    .btn_book_now a {
+        padding: 15px 40px !important;
+    }
+
+
+
+    .btn_book_now {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    /* .btn {
+    padding: 20px 55px !important;
+     
+} */
+
+    .footer_area {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .footer_top {
+        /* flex-wrap: wrap;
+     */
+        display: block !important;
+        text-align: center;
+
+        margin-bottom: 50px;
+    }
+
+    .footer_top .footer_card {
+        margin: 0 auto;
+        margin-bottom: 20px !important;
+        line-height: 30px;
+    }
+
+    .footer_address,
+    .footer_contact_us {
+        width: 100% !important;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .country img {
+        width: 100%;
+    }
+
+    .welcome_card {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .destination_top_countries {
+        flex-wrap: wrap;
+    }
+
+    .destination_bottom_countries {
+        flex-wrap: wrap;
+    }
+
+    .line {
+        display: none !important;
+    }
+
+    .blog_content {
+        /* flex-wrap: wrap; */
+        flex-direction: row;
+    }
+
+    .blog_left {
+        padding: 10px !important;
+    }
+
+    .blog_right_2 {
+        padding: 10px !important;
+        margin-top: -10px;
+    }
+
+    .people_love {
+        display: none;
+    }
+
+    .istanbul_section {
+        display: block;
+    }
+
+    .istanbul_image {
+        width: 100%;
+    }
+
+    .istanbul_text {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .comma {
+        display: none;
+    }
+
+    .client_image {
+        width: 180%;
+    }
+
+    .discount {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .btn_book_now a {
+        padding: 15px 55px !important;
+    }
+
+    .menu li {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .client_content {
+        margin-bottom: 150px;
+    }
+
+    .header_nav {
+        padding: 40px 10px;
+    }
+
+    .footer_top {
+        text-align: center;
+    }
+
+    .footer_area {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+
+}
